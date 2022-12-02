@@ -4,7 +4,7 @@
 
 ### Notes on truenas labs infrastructure
 
-These labs will mostly be based on a virtualized TrueNAS-SCALE. In my experience TrueNAS-SCALE is just better in the lab on another, 
+These labs will mostly be based on a virtualized TrueNAS-SCALE. In my experience TrueNAS-SCALE is just better in the lab when virtualized on another, 
 more flexible and mature platform. 
 The reason for this is primarily because of challenges with networking on TrueNAS-SCALE. Setting up TrueNAS-SCALE networking can be needlessly time consuming.
 Especially in a lab environment where bridging is often ideal. <sup><sub>See this [issue](https://ixsystems.atlassian.net/browse/NAS-118915) for more info</sub></sup>
