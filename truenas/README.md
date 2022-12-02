@@ -1,8 +1,8 @@
 # TrueNAS Labs
 
-### [Notes on truenas lab infrastructure](#notes-on-truenas-lab-infrastructure)
+### [Notes on truenas labs infrastructure](#notes-on-truenas-lab-infrastructure)
 
-### Notes on truenas lab infrastructure
+### Notes on truenas labs infrastructure
 
 These labs will mostly be based on a virtualized TrueNAS-SCALE. In my experience TrueNAS-SCALE is just better in the lab on another, 
 more flexible and mature platform. 
