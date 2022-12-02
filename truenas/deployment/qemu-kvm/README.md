@@ -1,6 +1,6 @@
 ## Deploying TrueNAS-SCALE VM to KVM Host
 
-- #### Download the iso
+- #### Download the iso from [truenas.com/download-truenas-scale](https://www.truenas.com/download-truenas-scale/)
   ```bash
   curl https://download.truenas.com/TrueNAS-SCALE-Angelfish/22.02.4/TrueNAS-SCALE-22.02.4.iso -o TrueNAS-SCALE-22.02.4.iso
   ```
