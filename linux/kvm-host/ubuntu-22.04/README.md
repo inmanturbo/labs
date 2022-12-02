@@ -68,10 +68,12 @@
   ```
 
 ## Enable SATA Controller to be passed through to TrueNAS VM
+
 > This requires a discrete Sata controller, and a seperate drive/controller for the host.
 > The board being used in this example has a sata controller and a seperate nvme drive.
 > The ubuntu host is installed on the nvme drive, on which the default libvirt pool will
 > also be used to store the image for the TrueNAS VM's boot drive.
+
 - #### First locate your SATA Controller
   ```bash
   lspci | grep SATA
@@ -98,17 +100,21 @@
   ```
 
 ## Configure the system to never poweroff or autosuspend
+
 > If you are running your host headless you can access the graphical 
 > environment using reminna over xrdp if you install `xrd` and disabled wayland
+
 - #### Login to the desktop environment 
   - Navigate to `Settings>Power` 
   - Set `Screen Blank` to **Never**
   - Set `Automatic Suspend` to **Off** 
 
 ## Create a bridge for VM Networking
+
 > If you want to have VMs on the regular LAN and want to allow Host/VM communication
 > you will need to create a bridge interface for your VMs. One of the simplets way to 
 > do this is using by using cockpit
+
 - #### Open cockpit in web browser (https://${server_ip}:9090) 
   - First enable administrative access (I advise logging out and back in after enabling it for your user)
   - Navigate to Networking>[Add Bridge]
@@ -117,9 +123,11 @@
     #### Ports
     - [x] eno1 <--use whichever port you want to use to connect VM's to the internet
 - #### Repeat for as many seperate ports as you want to give to your VM(s)
+
 > In the case of this example, the host will have a single TrueNAS-SCALE VM
 > which will host all other VMs using nested virtualization. In this case it is a good idea
 > to give the VM at least two network ports -- one for management and another for everything else
+
 - Navigate to Networking>[Add Bridge]
   #### Bridge Settings
   #### Name `br1`
@@ -127,11 +135,11 @@
   - [x] eno2 <--use whichever port you want to use to connect VM's to the internet
 
 ## Create a virtual network with the bridge
+
 > The instructions below are to replace the default virtual network
 > with a bridged network. If you wish to create a seperate bridged network
 > and leave the default network as is skip steps 3-4 below, and use another
 > name for the network in place of `default`.
-
 
 1. #### create an xml file
   ```bash
