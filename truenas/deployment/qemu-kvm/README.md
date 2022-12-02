@@ -1,5 +1,6 @@
 ## Deploying TrueNAS-SCALE VM to KVM Host
-
+> #### NOTE:
+> Requires a linux host running libvirt with qemu-kvm! For instruction on setting one up, you can follow [this guide](linux/kvm-host/ubuntu-22.04/README.md#graphical-workstation-kvm-lab)
 - #### Download the iso from [truenas.com/download-truenas-scale](https://www.truenas.com/download-truenas-scale/)
   ```bash
   curl https://download.truenas.com/TrueNAS-SCALE-Angelfish/22.02.4/TrueNAS-SCALE-22.02.4.iso -o TrueNAS-SCALE-22.02.4.iso
