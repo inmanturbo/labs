@@ -1,6 +1,6 @@
 # TrueNAS Labs
 
-### [Notes on truenas labs infrastructure](#notes-on-truenas-lab-infrastructure)
+### [Notes on truenas labs infrastructure](#notes-on-truenas-labs-infrastructure)
 
 ### Notes on truenas labs infrastructure
 
