@@ -11,10 +11,10 @@ Especially in a lab environment where bridging is often ideal. <sup><sub>See thi
 
 Typically in the labs explored here it's best that the bare metal infrastructure be as flexible and as transparant as possible so that we can focus on the software, 
 and allow it to define the infra as much as possible. To this end I usually prefer simply using the linux vfio moduled with qemu, kvm and libvirt on the bare metal host, 
-but I will likely explore other virtualization platforms here as well, such as Proxmox and XCP-NG.
+but I will likely explore other virtualization platforms here as well, such as Proxmox and XCP-NG, and possibly even ESXI (using an LSI HBU).
 
 > ### NOTE:
-> VMWare ESXI wold be a good option as well, however it lacks the flexibility of linux with `vfio`. 
+> Many of these labs can be applied on VMWare ESXI, however it lacks the flexibility of linux with `vfio`. 
 > For instance it's not possible to passthrough to a trueNAS VM an onboard sata controller as a pcie device.
 > It can be done using a discrete, dedicated pcie HBA, which IMO is just not quite as simple and elegant as just installing
-> a host OS on an embedded m.2 or nvme drive, then passing the sata controller through to TrueNAS VM 
+> a host OS on an embedded m.2 or nvme drive, then passing the sata controller through to TrueNAS VM.
